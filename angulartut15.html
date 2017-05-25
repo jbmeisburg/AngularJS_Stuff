@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="app15" ng-cloak>
+<head>
+  <title>AngularJS Tutorial 15</title>
+  <style>
+  [ng\:cloak], [ng-cloak], .ng-cloak {
+     display: none;
+  }
+
+
+  </style>
+</head>
+<body>
+
+	<div ng-controller="mainCtrl">
+
+    <button ng-click="getData()">Get Data</button>
+
+    {{players}}
+
+    <ul>
+      <li ng-repeat="player in players">
+        {{player.name + " hit " + player.hr  + "Home Runs"}}
+      </li>
+    </ul>
+
+	</div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+  <script src="js/exam15.js"></script>
+
+</body>
+</html>
